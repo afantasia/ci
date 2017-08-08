@@ -1,0 +1,20 @@
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+#RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !^/daumeditor/(.*)$
+RewriteCond %{REQUEST_URI} !^/images/(.*)$
+RewriteCond %{REQUEST_URI} !^/upload/(.*)$
+#RewriteCond %{REQUEST_URI} !^/order/(.*)$
+#RewriteCond $1 !^(index\.php|info\.php|/img|/images|/js|/css|/robots\.txt)
+RewriteRule ^(.*)$ index.php/$1 [L]
+</IfModule>
+
+#<IfModule !mod_rewrite.c>
+#ErrorDocument 404 /
+#</IfModule>
+
+

@@ -1,0 +1,7 @@
+/* paging  */
+#pagination{ clear:both; text-align:center; line-height:30px; clear:both; margin:15px 0 10px 0; }
+#pagination *{ font-family:Tahoma,arial, Geneva, sans-serif, Verdana; font-size:11px; color:#999 !important; font-weight:bold; }
+#pagination a{ padding:4px 7px 4px 7px; margin:2px; border:1px solid #ddd; background-color:#fff; text-decoration:none; }
+#pagination a:hover,
+#pagination a:active{ border:solid 1px #fc0; background:#fff; color:#f60 !important; }
+#pagination span.current{ padding:4px 7px 4px 7px; margin:2px 2px 2px 6px; border:solid 1px #090; background:#6C0; color:#fff !important; }
